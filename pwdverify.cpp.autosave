@@ -1,0 +1,11 @@
+#include "pwdverify.h"
+
+PwdVerify::PwdVerify(QObject *parent)
+    : QObject{parent},m_socket(new QTcpSocket)
+{}
+
+void PwdVerify::connectToHost()
+{
+    m_socket->connectToHost(QHostAddress("127.0.0.1",(unsigned )))
+}
+
